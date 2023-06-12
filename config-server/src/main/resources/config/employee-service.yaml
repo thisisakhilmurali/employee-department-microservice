@@ -1,0 +1,14 @@
+server:
+  port: 8082
+
+# department service should go and connect to the below URL
+eureka:
+  client:
+    service-url:
+      default-zone: http://localhost:8761/eureka/
+
+# zipkin
+management:
+  tracing:
+    sampling:
+      probability: 1.0
